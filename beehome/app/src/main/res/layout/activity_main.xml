@@ -27,9 +27,16 @@
                 android:layout_width="match_parent"
                 android:layout_column="0"
                 android:gravity="center"
-                android:padding="10dip"
+                android:padding="15dip"
                 android:text="Temperature: "
                 android:textSize="24sp" />
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dip"
+                app:srcCompat="@drawable/baseline_thermostat_black_24dp" />
         </TableRow>
 
         <TableRow
@@ -40,9 +47,16 @@
                 android:id="@+id/humidText"
                 android:layout_width="match_parent"
                 android:gravity="center"
-                android:padding="10dip"
+                android:padding="15dip"
                 android:text="Humidity: "
                 android:textSize="24sp" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dip"
+                app:srcCompat="@drawable/baseline_water_drop_black_24dp" />
         </TableRow>
 
         <TableRow
@@ -51,11 +65,18 @@
 
             <TextView
                 android:id="@+id/batText"
-                android:layout_width="match_parent"
+                android:layout_width="310dp"
                 android:gravity="center"
-                android:padding="10dip"
+                android:padding="15dip"
                 android:text="Battery: "
                 android:textSize="24sp" />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="66dp"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dip"
+                app:srcCompat="@drawable/baseline_battery_charging_full_black_24dp" />
 
 
         </TableRow>
