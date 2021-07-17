@@ -10,6 +10,7 @@
         android:id="@+id/chart"
         android:layout_width="match_parent"
         android:layout_height="300dp"
+        android:layout_marginTop="150dp"
         android:stretchColumns="0"
         app:layout_constraintBottom_toTopOf="@+id/button"
         app:layout_constraintEnd_toEndOf="parent"
@@ -30,6 +31,7 @@
                 android:padding="10dip"
                 android:text="Temperature: "
                 android:textSize="24sp" />
+
         </TableRow>
 
         <TableRow
@@ -45,20 +47,7 @@
                 android:textSize="24sp" />
         </TableRow>
 
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
 
-            <TextView
-                android:id="@+id/batText"
-                android:layout_width="match_parent"
-                android:gravity="center"
-                android:padding="10dip"
-                android:text="Battery: "
-                android:textSize="24sp" />
-
-
-        </TableRow>
 
     </TableLayout>
 
@@ -66,11 +55,39 @@
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Refresh"
         android:onClick="onRefresh"
+        android:text="Refresh"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.824" />
+
+    <ProgressBar
+        android:id="@+id/batLevel"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:max="100"
+        android:progress="100"
+        android:scaleX="3"
+        android:scaleY="2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.82"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.047" />
+
+    <TextView
+        android:id="@+id/batTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Battery Level"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toTopOf="@+id/batLevel"
+        app:layout_constraintEnd_toEndOf="@+id/batLevel"
+        app:layout_constraintStart_toStartOf="@+id/batLevel"
         app:layout_constraintTop_toTopOf="parent" />
 
 

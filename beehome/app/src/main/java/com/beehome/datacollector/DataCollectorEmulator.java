@@ -17,6 +17,7 @@ public class DataCollectorEmulator implements DataCollector {
 
     @Override
     public int getBatteryLevel() {
-        return Integer.parseInt(Long.toString(Math.round(Math.random() * 100)));
+        //return Integer.parseInt(Long.toString(Math.round(Math.random() * 100)));
+        return 100;
     }
 }

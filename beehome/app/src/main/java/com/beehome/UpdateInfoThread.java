@@ -2,9 +2,6 @@ package com.beehome;
 
 import com.beehome.datacollector.DataCollector;
 import com.beehome.datacollector.DataCollectorEmulator;
-
-import java.util.Timer;
-import java.util.TimerTask;
 //import org.w3c.dom.CDATASection;
 
 public class UpdateInfoThread extends Thread {
@@ -24,10 +21,11 @@ public class UpdateInfoThread extends Thread {
     }
 
     public void run() {
+        int x = 0;
         while (this.isToUpdate) {
             try {
                 //wait for 30 sec
-                Thread.sleep(1000 * 10);
+                Thread.sleep(1000 * 3);
             } catch (InterruptedException e) {
                 System.err.println("Update thread failed:" + e.getMessage());
                 e.printStackTrace();
@@ -36,7 +34,8 @@ public class UpdateInfoThread extends Thread {
             int temp = this.dataCollector.getTemperature();
             int humidity = this.dataCollector.getHumidity();
             int battery = dataCollector.getBatteryLevel();
-            dataRefresher.refresh(temp, humidity, battery);
+            dataRefresher.refresh(temp, humidity, battery, x);
+            x++;
         }
     }
 

@@ -18,7 +18,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         DataRefresher dataRefresher = new DataRefresher(findViewById(R.id.tempText),
-                findViewById(R.id.humidText), findViewById(R.id.batText));
+                findViewById(R.id.humidText), findViewById(R.id.batLevel));
         DataCollector collector = new DataCollectorEmulator();
         updateThread = new UpdateInfoThread(collector, dataRefresher);
     }
@@ -29,6 +29,7 @@ public class MainActivity extends AppCompatActivity {
         updateThread.setIsToUpdate(true);
         updateThread.start();
     }
+
 
     protected void onStop(){
         super.onStop();
