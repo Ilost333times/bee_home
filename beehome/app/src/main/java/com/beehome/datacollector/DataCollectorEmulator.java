@@ -14,4 +14,9 @@ public class DataCollectorEmulator implements DataCollector {
     public int getHumidity() {
         return Integer.parseInt(Long.toString(Math.round(Math.random() * 100)));
     }
+
+    @Override
+    public int getBatteryLevel() {
+        return Integer.parseInt(Long.toString(Math.round(Math.random() * 100)));
+    }
 }
