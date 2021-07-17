@@ -28,7 +28,8 @@
                 android:layout_column="0"
                 android:gravity="center"
                 android:padding="10dip"
-                android:text="Temperature: " />
+                android:text="Temperature: "
+                android:textSize="24sp" />
         </TableRow>
 
         <TableRow
@@ -40,7 +41,8 @@
                 android:layout_width="match_parent"
                 android:gravity="center"
                 android:padding="10dip"
-                android:text="Humidity: " />
+                android:text="Humidity: "
+                android:textSize="24sp" />
         </TableRow>
 
         <TableRow
@@ -52,7 +54,8 @@
                 android:layout_width="match_parent"
                 android:gravity="center"
                 android:padding="10dip"
-                android:text="Battery: " />
+                android:text="Battery: "
+                android:textSize="24sp" />
 
 
         </TableRow>

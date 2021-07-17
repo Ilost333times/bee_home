@@ -6,4 +6,6 @@ public interface DataCollector {
 
     int getHumidity();
 
+    int getBatteryLevel();
+
 }
