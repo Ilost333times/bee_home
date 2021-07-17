@@ -6,12 +6,12 @@ public class DataCollectorEmulator implements DataCollector {
     }
 
     @Override
-    public Double getTemperature() {
-        return Math.random();
+    public int getTemperature() {
+        return Integer.parseInt(Long.toString(Math.round(Math.random() * 40)));
     }
 
     @Override
-    public Double getHumidity() {
-        return Math.random();
+    public int getHumidity() {
+        return Integer.parseInt(Long.toString(Math.round(Math.random() * 100)));
     }
 }

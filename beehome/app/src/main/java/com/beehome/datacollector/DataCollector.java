@@ -2,8 +2,8 @@ package com.beehome.datacollector;
 
 public interface DataCollector {
 
-    Double getTemperature();
+    int getTemperature();
 
-    Double getHumidity();
+    int getHumidity();
 
 }

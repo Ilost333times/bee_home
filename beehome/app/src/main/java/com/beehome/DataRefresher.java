@@ -11,9 +11,10 @@ public class DataRefresher {
         this.humidityTextView = humidityTextView2;
     }
 
-    public void refresh(Double temperature, Double humidity) {
+    public void refresh(int temperature, int humidity) {
 
-        this.temperatureTextView.setText(temperature.toString());
+        this.temperatureTextView.setText(temperature);
+        this.humidityTextView.setText(humidity);
 
     }
 
