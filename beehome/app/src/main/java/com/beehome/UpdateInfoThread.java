@@ -24,7 +24,7 @@ public class UpdateInfoThread extends Thread {
         int x = 0;
         while (this.isToUpdate) {
             try {
-                //wait for 30 sec
+                //wait for 3 sec
                 Thread.sleep(1000 * 3);
             } catch (InterruptedException e) {
                 System.err.println("Update thread failed:" + e.getMessage());
